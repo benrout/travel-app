@@ -1,0 +1,32 @@
+{
+  "name": "travel-app",
+  "version": "1.0.0",
+  "description": "Some description ",
+  "main": "fuse.js",
+  "dependencies": {
+    "mobx": "^5.8.0",
+    "mobx-react": "^5.4.3",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.7.18",
+    "@types/react-dom": "^16.0.11",
+    "fuse-box": "^3.6.0",
+    "node-sass": "^4.11.0",
+    "typescript": "^3.2.2"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benrout/travel-app.git"
+  },
+  "author": "Ben Rout <email@something.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benrout/travel-app/issues"
+  },
+  "homepage": "https://github.com/benrout/travel-app#readme"
+}
