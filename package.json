@@ -4,6 +4,7 @@
   "description": "Some description ",
   "main": "fuse.js",
   "dependencies": {
+    "bootstrap": "^4.2.1",
     "mobx": "^5.8.0",
     "mobx-react": "^5.4.3",
     "react": "^16.7.0",
