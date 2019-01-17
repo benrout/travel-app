@@ -3,12 +3,14 @@ import * as ReactDOM from 'react-dom';
 import "./index.scss";
 import { Navbar } from './components/Navbar/Navbar';
 import { Search } from './components/Search/Search';
-import { Quote } from './components/Quote/Quote';
+import { Quotes } from './components/Quotes/Quotes';
 import { Footer } from './components/Footer/Footer';
 import { TravelInspiration } from './components/TravelInspiration/TravelInspiration';
 import { TrendingDestinations } from './components/TrendingDestinations/TrendingDestinations';
+import { ITrendingDestination } from './models/TrendingDestinationsModel';
+import { IQuote } from './models/QuotesModel';
 
-const trendingCities = [
+const trendingCities: ITrendingDestination[] = [
     {
         title: 'Sydney',
         imageUrl: 'https://images.unsplash.com/photo-1530521954074-e64f6810b32d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'
@@ -35,7 +37,7 @@ const trendingCities = [
     }
 ]
 
-const trendingCountries = [
+const trendingCountries: ITrendingDestination[] = [
     {
         title: 'United Kingdom',
         imageUrl: 'https://images.unsplash.com/photo-1530521954074-e64f6810b32d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'
@@ -62,6 +64,21 @@ const trendingCountries = [
     }
 ]
 
+const quotes: IQuote[] = [
+    {
+        text: "Quote 1",
+        author: "Author 1"
+    },
+    {
+        text: "Quote 2",
+        author: "Author 2"
+    },
+    {
+        text: "Quote 3",
+        author: "Author 3"
+    },
+]
+
 function App(props) {
     return (
         <React.Fragment>
@@ -72,8 +89,7 @@ function App(props) {
                 <TravelInspiration heading="Travel Inpsiration" description="Our latest travel tips, expert hacks and industry insights to help make your journey one to remember" />
                 <TrendingDestinations destinationType="cities" destinations={trendingCities} />
                 <TrendingDestinations destinationType="countries" destinations={trendingCountries} />
-
-                <Quote text="Here's a quote" author="Someone" />
+                <Quotes quotes={quotes} />
             </div>
             <Footer />
         </React.Fragment>
