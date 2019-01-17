@@ -1,12 +1,14 @@
 import * as React from 'react';
 import "./TrendingDestinations.scss";
+import { TrendingDestinationListProps } from '../../models/TrendingDestinationsModel';
 
-export function TrendingDestinations(props) {
+export function TrendingDestinations(props: TrendingDestinationListProps) {
 
     return (
         <div>
-            <div>Trending {props.destinationType}</div>
-            <div>The most searched {props.destinationType} on TravelApp</div>
+            <hr></hr>
+            <div className="text-center">Trending {props.destinationType}</div>
+            <div className="text-center">The most searched {props.destinationType} on TravelApp</div>
             <div className="d-flex flex-row flex-wrap">
                 {props.destinations.map(destination => {
                     const imageStyles = {
