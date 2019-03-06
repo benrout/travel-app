@@ -1,4 +1,5 @@
 .DS_Store
 .thumbsdb
 .fusebox
+dist
 node_modules
